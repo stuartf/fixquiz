@@ -1,0 +1,17 @@
+{
+  "name": "fixquiz",
+  "version": "0.0.1",
+  "description": "Fix exported Sakai quizzes for imscc import",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "D. Stuart Freeman",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "lodash": "^4.3.0",
+    "pretty-data": "^0.40.0",
+    "yargs": "^3.32.0"
+  }
+}
