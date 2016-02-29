@@ -28,7 +28,8 @@ app.post('/api/fixquiz', upload.single('qti'), function(req, res) {
         filename.pop();
         filename = filename.join('.');
         filename += '-fixed.xml';
-        res.setHeader('Content-disposition', 'attachment; filename=' + filename);
+        res.setHeader('Content-disposition', 'attachment; filename="' + filename + '"');
+        res.setHeader('Content-type', 'application/xml');
         return res.send(xml);
     });
 });
